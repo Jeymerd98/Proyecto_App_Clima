@@ -445,6 +445,7 @@
         android:layout_height="wrap_content"
         android:backgroundTint="#FF9800"
         android:gravity="center"
+        android:onClick="MainActivity2"
         android:text="VER CLIMA DE OTRA CIUDAD"
         android:textColor="#090909"
         android:textStyle="bold|italic"

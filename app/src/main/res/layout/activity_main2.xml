@@ -110,12 +110,14 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="#FF9800"
                 android:text="VOLVER"
+                android:onClick="MainActivity"
                 android:textColor="#090909"
                 android:textStyle="bold|italic"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.13"
                 app:layout_constraintStart_toStartOf="parent"
-                tools:layout_editor_absoluteY="660dp" />
+                tools:layout_editor_absoluteY="660dp"
+                tools:ignore="OnClick" />
 
             <Button
                 android:id="@+id/btn_pantalla_inicial"
@@ -123,12 +125,14 @@
                 android:layout_height="wrap_content"
                 android:backgroundTint="#FF9800"
                 android:text="CLIMA DE MAÑANA"
+                android:onClick="MainActivity3"
                 android:textColor="#090909"
                 android:textStyle="bold|italic"
                 app:layout_constraintEnd_toEndOf="parent"
                 app:layout_constraintHorizontal_bias="0.875"
                 app:layout_constraintStart_toStartOf="parent"
-                tools:layout_editor_absoluteY="663dp" />
+                tools:layout_editor_absoluteY="663dp"
+                tools:ignore="OnClick" />
         </LinearLayout>
 
 
