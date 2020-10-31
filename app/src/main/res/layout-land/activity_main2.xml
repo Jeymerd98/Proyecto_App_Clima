@@ -1,19 +1,18 @@
 <?xml version="1.0" encoding="utf-8"?>
-<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+<androidx.constraintlayout.widget.ConstraintLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:background="@android:color/white"
-    android:foregroundGravity="center"
-    app:layout_anchorGravity="center"
     tools:context=".MainActivity">
 
 
     <View
         android:id="@+id/view2"
         android:layout_width="match_parent"
-        android:layout_height="400dp"
+        android:layout_height="200dp"
         android:background="@drawable/paisaje"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.0"
@@ -21,49 +20,21 @@
         app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
-        android:id="@+id/txtbuscar"
-        android:layout_width="350dp"
-        android:layout_height="50dp"
-        android:layout_marginTop="350dp"
-        android:background="@drawable/buscar"
-        android:foregroundGravity="center"
-        android:gravity="center"
-        android:hint="@string/buscar"
-        android:textSize="20sp"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/view2" />
-
-    <EditText
-        android:id="@+id/search_edit"
-        android:layout_width="match_parent"
-        android:layout_height="wrap_content"
-        android:layout_margin="25dp"
-        android:foregroundGravity="center"
-        android:gravity="center"
-        app:layout_constraintBottom_toBottomOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/view2"
-        app:layout_constraintVertical_bias="0.52" />
-
-    <TextView
         android:id="@+id/Ciudad"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="425dp"
+        android:layout_marginTop="230dp"
         android:text="@string/ciudad"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/view2" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
         android:id="@+id/clima"
-        android:layout_width="100dp"
+        android:layout_width="127dp"
         android:layout_height="100dp"
-        android:layout_marginTop="440dp"
-        android:contentDescription="@string/imagenes"
+        android:layout_marginTop="245dp"
         android:src="@drawable/clouds_and_sun"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -73,18 +44,18 @@
         android:id="@+id/temperatura"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="540dp"
+        android:layout_marginTop="340dp"
         android:text="@string/temp"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/view2" />
+        app:layout_constraintTop_toTopOf="parent" />
 
     <TextView
         android:id="@+id/desc"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="570dp"
-        android:text="@string/descripcion"
+        android:layout_marginTop="360dp"
+        android:text="Descripcion"
         android:textAppearance="@style/TextAppearance.AppCompat.Body1"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
@@ -95,7 +66,7 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_marginStart="7dp"
-        android:layout_marginTop="600dp"
+        android:layout_marginTop="147dp"
         android:layout_marginEnd="7dp"
         android:backgroundTint="#FF9800"
         android:onClick="MainActivity"
@@ -103,8 +74,9 @@
         android:textColor="#090909"
         android:textStyle="bold|italic"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.097"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="@+id/view2"
+        app:layout_constraintTop_toBottomOf="@+id/view2"
         tools:ignore="OnClick" />
 
     <Button
@@ -119,20 +91,44 @@
         android:textColor="#090909"
         android:textStyle="bold|italic"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintHorizontal_bias="0.497"
+        app:layout_constraintHorizontal_bias="0.966"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toBottomOf="@+id/btn_volver"
-        tools:ignore="OnClick" />
+        tools:ignore="OnClick"
+        tools:layout_editor_absoluteY="341dp" />
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="500dp"
+        android:layout_height="50dp"
+        android:layout_marginTop="150dp"
+        android:background="@drawable/buscar"
+        android:gravity="center"
+        android:hint="@string/buscar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
 
     <ImageView
-        android:id="@+id/imageView8"
+        android:id="@+id/imageView2"
         android:layout_width="50dp"
         android:layout_height="50dp"
-        android:layout_marginTop="350dp"
-        android:layout_marginEnd="30dp"
-        android:contentDescription="@string/imagenes"
+        android:layout_marginStart="300dp"
+        android:layout_marginTop="150dp"
         app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:srcCompat="@drawable/search_locate_find_13974" />
+
+    <EditText
+        android:id="@+id/search_edit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="25dp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toStartOf="@+id/view2"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="@+id/view2"
+        app:layout_constraintVertical_bias="0.41000003" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
