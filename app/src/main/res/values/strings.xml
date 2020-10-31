@@ -13,4 +13,10 @@
     <string name="imagenes">ImaganesPantallaUno</string>
     <string name="boton">VER CLIMA DE OTRA CIUDAD</string>
     <string name="prueba">prueba</string>
+    <string name="buscar">Ingrese una ciudad</string>
+    <string name="ciudad">Ciudad</string>
+    <string name="temp">Temperatura</string>
+    <string name="descripcion">Descripcion</string>
+    <string name="volver">Volver</string>
+    <string name="clima">Clima</string>
 </resources>
