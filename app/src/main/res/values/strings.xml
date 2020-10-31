@@ -1,12 +1,16 @@
 <resources>
     <string name="app_name">Proyecto_App_Clima</string>
-    <string name="imagenes">Proyecto_App_Clima</string>
-    <string name="descripcion">Descripcion</string>
-    <string name="temp">Temperatura</string>
-    <string name="ciudad">Ciudad</string>
-    <string name="volver">VOLVER</string>
-    <string name="clima">Clima</string>
-    <string name="buscar">Buscar una ciudad</string>
-
-
+    <string name="txt_humedad">Humedad</string>
+    <string name="txt_presion">Presion</string>
+    <string name="txt_viento">Viento</string>
+    <string name="txt_nublado">Nublado</string>
+    <string name="txt_lluvia">Lluvia</string>
+    <string name="txt_neblina">Neblina</string>
+    <string name="txt_soleado">Soleado</string>
+    <string name="txt_Bienvenido">Bienvenido</string>
+    <string name="txt_Tegucigalpa">Tegucigalpa</string>
+    <string name="txt_Honduras">Honduras</string>
+    <string name="imagenes">ImaganesPantallaUno</string>
+    <string name="boton">VER CLIMA DE OTRA CIUDAD</string>
+    <string name="prueba">prueba</string>
 </resources>
