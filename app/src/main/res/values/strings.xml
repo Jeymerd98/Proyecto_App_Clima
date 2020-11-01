@@ -18,6 +18,6 @@
     <string name="temp">Temperatura</string>
     <string name="descripcion">Descripcion</string>
     <string name="volver">Volver</string>
-    <string name="clima">Clima</string>
+    <string name="clima">Ver clima para mañana</string>
     <string name="grados">31°C</string>
 </resources>
