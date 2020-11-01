@@ -25,6 +25,7 @@
         android:layout_width="350dp"
         android:layout_height="50dp"
         android:layout_marginTop="350dp"
+
         android:background="@drawable/buscar"
         android:foregroundGravity="center"
         android:gravity="center"

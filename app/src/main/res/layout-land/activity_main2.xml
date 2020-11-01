@@ -93,7 +93,7 @@
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.966"
         app:layout_constraintStart_toStartOf="parent"
-        tools:ignore="OnClick"
+        tools:ignore="MissingConstraints,OnClick"
         tools:layout_editor_absoluteY="341dp" />
 
     <TextView
