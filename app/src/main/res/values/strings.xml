@@ -1,5 +1,8 @@
 <resources>
     <string name="app_name">Proyecto_App_Clima</string>
+
+    <string name="Api_Key">2d4be65ab733465b8adeb5189a0106f1</string>
+
     <string name="txt_humedad">Humedad</string>
     <string name="txt_presion">Presion</string>
     <string name="txt_viento">Viento</string>
