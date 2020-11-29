@@ -10,21 +10,33 @@ import android.location.LocationManager
 import android.location.LocationProvider
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
+import android.provider.ContactsContract.CommonDataKinds.Website.URL
 import android.telecom.Call
 import android.util.Log
 import android.view.View
 import android.widget.TextView
 import androidx.core.app.ActivityCompat
+import com.android.volley.Request
+import com.android.volley.RequestQueue
+import com.android.volley.Response
+import com.android.volley.toolbox.JsonObjectRequest
+import com.android.volley.toolbox.Volley
+import org.json.JSONException
 import org.json.JSONObject
 import java.text.AttributedString
+import java.net.URL as URL1
 
-class MainActivity : AppCompatActivity() {
+class MainActivity<RequestQueue> : AppCompatActivity() {
     private val REQUEST_PERMISSION = 1
     var locationManager : LocationManager = TODO()
+    var requestQueue: RequestQueue
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
+
+        Volley.newRequestQueue(applicationContext)
+
         locationManager = getSystemService(LOCATION_SERVICE) as LocationManager
         _getLocation
     }
@@ -71,5 +83,38 @@ class MainActivity : AppCompatActivity() {
     }
     override fun onResume() {
         super.onResume()
+        Log.d("Main", "In Resume")
+        GetWeather()
     }
+    fun GetWeather() {
+        val URL = "https://api.weatherbit.io/v2.0/current?city=Honduras&key=2d4be65ab733465b8adeb5189a0106f1"
+        //val jsonObjectRequest = JsonObjectRequest(Request.Method.GET, URL, null,  Response.Listener){
+
+        @Suppress("UNREACHABLE_CODE") val jsonObjectRequest = JsonObjectRequest(Request.Method.GET, URL, null, { response ->
+
+            fun onResponse(response:JSONObject){
+                var city:JSONObject
+                //Log.d("Main", String.equals(response).toString())
+                throw Exception()
+                try {
+                    val response:city
+                    JSONObject("city")
+                    val name =  city.getString("name")
+                    Log.d("Main", name)
+
+                } catch (e:JSONException) {
+                    e.printStackTrace()
+                }
+            }
+        },
+                { error ->
+
+                }
+        ) }
+
+    class city {
+
+    }
+
 }
+

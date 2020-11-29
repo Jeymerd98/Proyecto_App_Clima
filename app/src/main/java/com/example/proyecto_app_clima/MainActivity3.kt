@@ -15,7 +15,7 @@ class MainActivity3 : AppCompatActivity() {
         startActivity(cambio)
     }
     fun MainActivity(view: View) {
-        val cambio = Intent(this, MainActivity()::class.java)
+        val cambio = Intent(this, MainActivity<Any>()::class.java)
         startActivity(cambio)
     }
 }
