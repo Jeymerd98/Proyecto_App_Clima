@@ -35,6 +35,7 @@ class MainActivity<RequestQueue> : AppCompatActivity() {
         super.onCreate(savedInstanceState)
         setContentView(R.layout.activity_main)
 
+        
         Volley.newRequestQueue(applicationContext)
 
         locationManager = getSystemService(LOCATION_SERVICE) as LocationManager
